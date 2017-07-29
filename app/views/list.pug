@@ -1,0 +1,9 @@
+extends ../layouts/main.pug
+
+block head
+  title Województwa 
+
+block content
+  div(ng-controller="List")
+    ul(ng-repeat="x in wojewudztwa")
+      li {{ x.name }}
